@@ -1,12 +1,12 @@
-import Row from './Row';
+import GridRow from './GridRow';
 import { DIRECTION } from '../utils';
 import '../Styles/GridView.css';
 
 const GridView = () => {
   return <div className='grid'>
-    <Row className='grid-row' count={3} />
-    <Row className='grid-row' count={1} align={DIRECTION.RIGHT} />
-    <Row className='grid-row' count={3} />
+    <GridRow className='grid-row' count={3} />
+    <GridRow className='grid-row' count={1} align={DIRECTION.RIGHT} />
+    <GridRow className='grid-row' count={3} />
   </div>
 }
 

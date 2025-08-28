@@ -1,4 +1,4 @@
-const Row = (props) => {
+const GridRow = (props) => {
   const { count, align } = props;
   const rowLength = Array.apply(null, Array(count));
 
@@ -15,4 +15,4 @@ const Row = (props) => {
   </div>
 }
 
-export default Row;
+export default GridRow;
