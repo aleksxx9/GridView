@@ -1,7 +1,7 @@
 const GridRow = (props) => {
   const { count, align } = props;
-  const rowLength = Array.apply(null, Array(count));
 
+  const rowLength = Array.apply(null, Array(count));
   let btnClass = 'grid-row';
 
   if (align) {
@@ -9,10 +9,18 @@ const GridRow = (props) => {
   }
 
   return <div className={btnClass}>
-    {rowLength.map(() => {
-      return <button className='grid-button' />
-    })}
+    {
+      rowLength.map(() => {
+        return <Button />
+      })
+    }
   </div>
+}
+
+const Button = () => {
+  return (
+    <button className={`grid-button`} />
+  )
 }
 
 export default GridRow;

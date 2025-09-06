@@ -27,13 +27,9 @@
   box-shadow: 3px 3px 10px black;
 }
 
-.grid .grid-button:active {
+.grid .grid-button.active {
   box-shadow: 3px 3px 5px black;
   background-color: rgb(18, 115, 139);
-}
-
-.grid .grid-button:not(:active) {
-  transition: background-color 0s 2s;
 }
 
 .grid .grid-right {
